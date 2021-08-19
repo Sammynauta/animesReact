@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+.App {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Rubik Mono One', sans-serif;
+}
+
+.animes-lista {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  );
+  list-style: none;
+  grid-gap: 1rem;
+}
+
+.animes-lista img {
+  max-width: 100%;
+  cursor: pointer;
+  transform: scale(1);
+  transition: 0.5 ease;
+}
+
+.animes-lista img:hover {
+  transform: scale(0.94);
+}
